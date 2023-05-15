@@ -1,24 +1,34 @@
 package com.swpu.lihongye.pojo;
 
-public class Student {
-    private int classInfo;
-    private int workInfo;
+public class Class {
+    private long classInfo;
+    private long workInfo;
     private String className;
     private String classTeacher;
 
-    public int getClassInfo() {
+    public Class() {
+    }
+
+    public Class( String classTeacher, long classInfo, long workInfo,String className) {
+        this.classInfo = classInfo;
+        this.workInfo = workInfo;
+        this.className = className;
+        this.classTeacher = classTeacher;
+    }
+
+    public long getClassInfo() {
         return classInfo;
     }
 
-    public void setClassInfo(int classInfo) {
+    public void setClassInfo(long classInfo) {
         this.classInfo = classInfo;
     }
 
-    public int getWorkInfo() {
+    public long getWorkInfo() {
         return workInfo;
     }
 
-    public void setWorkInfo(int workInfo) {
+    public void setWorkInfo(long workInfo) {
         this.workInfo = workInfo;
     }
 
@@ -36,5 +46,11 @@ public class Student {
 
     public void setClassTeacher(String classTeacher) {
         this.classTeacher = classTeacher;
+    }
+
+    @Override
+    public String toString() {
+        return "班级号："+ getClassInfo()+
+                "，班级名："+ getClassName()+"，班主任："+ getClassTeacher()+"，老师工号："+ getWorkInfo();
     }
 }
