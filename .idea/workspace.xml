@@ -7,21 +7,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cb7d383-e1c7-415f-9561-cb21810031e7" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1cb7d383-e1c7-415f-9561-cb21810031e7" name="变更" comment="修改查询语句&#10;版本1.1.0&#10;将SQL语句改为动态SQL语句&#10;将查询语句处理单独处理成函数">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/controller/ClassController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/controller/SpringBootControllerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/dao/mapper/ClassMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/dao/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/dao/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/service/ClassService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/service/ClassServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/service/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/utils/MenuUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/ClassMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/class-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/selected.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test/SpringConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test/StudentServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/dao/UserMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/main/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/main/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/main/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/pojo/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/pojo/Class.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/pojo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/pojo/Teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/test/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/test/TestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/utils/InputUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/utils/InputUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swpu/lihongye/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/UserTest.java" afterDir="false" />
     </list>
@@ -33,7 +51,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="mybatis-config" />
+        <option value="Mapper配置文件" />
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="Jspx File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -46,6 +70,18 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program\Maven\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Program/Maven/apache-maven-3.9.2" />
+        <option name="userSettingsFile" value="D:\Program\Maven\apache-maven-3.9.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -60,6 +96,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
@@ -68,44 +109,43 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ToolWindowCheckStyle.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "F:/Project/Java/2/明日彩票预测系统",
-    "settings.editor.selected.configurable": "Errors"
+    "last_opened_file_path": "D:/Project/IdeaProjects/ClassManagerApplication",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3218391",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "8b66c825162143355335b6377033c721",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="应用程序.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.swpu.lihongye.main.Client" />
-      <module name="ClassManagerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.swpu.lihongye.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.swpu.lihongye.test.TestUtils" />
-      <module name="ClassManagerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.swpu.lihongye.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Project\Java\ClassManagerApplication\src\main\resources\templates" />
+      <recent name="F:\Project\Java\ClassManagerApplication\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Project\Java\ClassManagerApplication\src\main\resources\templates" />
+      <recent name="F:\Project\Java\ClassManagerApplication\src\main\resources" />
+      <recent name="F:\Project\Java\ClassManagerApplication\src\main\resources\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootControllerApplication">
+    <configuration name="StudentServiceTest.userServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClassManagerApplication" />
       <extension name="coverage">
         <pattern>
@@ -114,34 +154,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.userFindByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClassManagerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.UserTest" />
-      <option name="METHOD_NAME" value="userFindByIdTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.StudentServiceTest" />
+      <option name="METHOD_NAME" value="userServiceTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootControllerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ClassManagerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swpu.lihongye.controller.SpringBootControllerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.swpu.lihongye.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Client" />
-        <item itemvalue="应用程序.TestUtils" />
-        <item itemvalue="JUnit.UserTest.userFindByIdTest" />
-        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="Spring Boot.SpringBootControllerApplication" />
+        <item itemvalue="JUnit.StudentServiceTest.userServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,8 +228,67 @@
       <workItem from="1684054520931" duration="2267000" />
       <workItem from="1684056966786" duration="1169000" />
       <workItem from="1684133226273" duration="4676000" />
-      <workItem from="1684137960244" duration="2830000" />
+      <workItem from="1684137960244" duration="3806000" />
+      <workItem from="1684157005700" duration="4297000" />
+      <workItem from="1684207381785" duration="20836000" />
+      <workItem from="1684250083421" duration="4464000" />
+      <workItem from="1684305699011" duration="6907000" />
+      <workItem from="1684468193855" duration="799000" />
+      <workItem from="1684469016269" duration="46000" />
+      <workItem from="1684469086912" duration="237000" />
+      <workItem from="1684469344620" duration="539000" />
+      <workItem from="1684469901626" duration="609000" />
+      <workItem from="1684470533149" duration="1125000" />
+      <workItem from="1684471685208" duration="240000" />
+      <workItem from="1684471944560" duration="893000" />
+      <workItem from="1684472863274" duration="1076000" />
+      <workItem from="1684473965656" duration="288000" />
+      <workItem from="1684474273473" duration="745000" />
+      <workItem from="1684475040106" duration="244000" />
+      <workItem from="1684475301219" duration="712000" />
+      <workItem from="1684480413360" duration="682000" />
+      <workItem from="1684491383865" duration="2523000" />
+      <workItem from="1684601799937" duration="535000" />
+      <workItem from="1684660357189" duration="62000" />
+      <workItem from="1684683897991" duration="43000" />
+      <workItem from="1684940179776" duration="558000" />
+      <workItem from="1685284183372" duration="49000" />
+      <workItem from="1685284403958" duration="19000" />
+      <workItem from="1685433879961" duration="2193000" />
+      <workItem from="1685436207741" duration="908000" />
+      <workItem from="1685437139041" duration="16405000" />
+      <workItem from="1685507187881" duration="5159000" />
+      <workItem from="1685517398785" duration="1772000" />
+      <workItem from="1685542378552" duration="97000" />
+      <workItem from="1685928412241" duration="7000" />
+      <workItem from="1685929328554" duration="26000" />
+      <workItem from="1685959862679" duration="1469000" />
+      <workItem from="1686102955656" duration="700000" />
+      <workItem from="1686386044240" duration="9473000" />
+      <workItem from="1686452881263" duration="12736000" />
+      <workItem from="1686486421354" duration="5656000" />
+      <workItem from="1686555379787" duration="4630000" />
+      <workItem from="1686621110894" duration="13000" />
+      <workItem from="1687338830674" duration="408000" />
+      <workItem from="1687676579695" duration="512000" />
+      <workItem from="1687677153290" duration="134000" />
+      <workItem from="1687677299175" duration="1341000" />
+      <workItem from="1687691090313" duration="1837000" />
+      <workItem from="1687693061444" duration="1084000" />
+      <workItem from="1687755881196" duration="160000" />
+      <workItem from="1687943729240" duration="43000" />
+      <workItem from="1687956844743" duration="1356000" />
+      <workItem from="1688000499111" duration="221000" />
+      <workItem from="1688004651332" duration="167000" />
     </task>
+    <task id="LOCAL-00001" summary="修改查询语句&#10;版本1.1.0&#10;将SQL语句改为动态SQL语句&#10;将查询语句处理单独处理成函数">
+      <created>1684140924944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684140924944</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,9 +305,23 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改查询语句&#10;版本1.1.0&#10;将SQL语句改为动态SQL语句&#10;将查询语句处理单独处理成函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改查询语句&#10;版本1.1.0&#10;将SQL语句改为动态SQL语句&#10;将查询语句处理单独处理成函数" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

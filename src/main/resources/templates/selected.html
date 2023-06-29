@@ -1,0 +1,27 @@
+<!-- selected.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selected Students</title>
+</head>
+<body>
+<h1>Selected Students</h1>
+<table>
+  <tr>
+    <th>Student ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Phone</th>
+    <th>Address</th>
+  </tr>
+  <tr th:each="student : ${selectedStudents}">
+    <td th:text="${student.studentId}"></td>
+    <td th:text="${student.studentName}"></td>
+    <td th:text="${student.age}"></td>
+    <td th:text="${student.phone}"></td>
+    <td th:text="${student.address}"></td>
+  </tr>
+</table>
+</body>
+</html>

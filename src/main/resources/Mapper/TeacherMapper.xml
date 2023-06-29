@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swpu.lihongye.dao.mapper.TeacherMapper">
+    <!--    增-->
+    <insert id="addTeacher">
+        insert into teacher_message(teacher_name, sex, phone, address)
+        VALUES (#{teacherName}, #{sex}, #{phone}, #{address})
+    </insert>
+    <!--    删-->
+    <delete id="deleteTeacher">
+        DELETE
+        from teacher_message
+        <where>
+            work_info = #{workInfo}
+        </where>
+    </delete>
+    <!--    改-->
+    <update id="updateTeacher">
+        update teacher_message
+        <set>
+            <if test="teacherPojo.workInfo != null != null">
+                work_info=#{teacherPojo.workInfo},
+            </if>
+            <if test="teacherPojo.teacherName != null and teacherPojo.teacherName != ''">
+                teacher_name=#{teacherPojo.workInfo},
+            </if>
+            <if test="teacherPojo.address != null and teacherPojo.address != ''">
+                address=#{teacherPojo.address},
+            </if>
+            <if test="teacherPojo.phone != null">
+                phone=#{teacherPojo.phone},
+            </if>
+            <if test="teacherPojo.sex != null">
+                sex=#{teacherPojo.sex}
+            </if>
+        </set>
+        <where>
+            work_info = #{workInfo}
+        </where>
+    </update>
+<!--    查-->
+    <resultMap id="TeacherResultMap" type="com.swpu.lihongye.pojo.Teacher">
+        <id column="work_info"  property="workInfo"/>
+        <result column="teacher_name"   property="teacherName"/>
+        <result column="sex"    property="sex"/>
+        <result column="phone"  property="phone"/>
+        <result column="address"    property="address"/>
+    </resultMap>
+    <select id="searchTeacher" resultMap="TeacherResultMap">
+        select * from teacher_message
+        <where>
+            <if test="workInfo != null">
+                work_info=#{workInfo}
+            </if>
+            <if test="teacherName != null and teacherName != ''">
+                and teacher_name=#{teacherName}
+            </if>
+        </where>
+    </select>
+</mapper>

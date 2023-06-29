@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Class List</title>
+</head>
+<body>
+<h1>Class List</h1>
+<table>
+  <tr>
+    <th>ClassName</th>
+    <th>ClassTeacher</th>
+    <th>ClassInfo</th>
+    <th>TeacherInfo</th>
+  </tr>
+  <tr th:each="class : ${classes}">
+    <td th:text="${class.className}"></td>
+    <td th:text="${class.classTeacher}"></td>
+    <td th:text="${class.classInfo}"></td>
+    <td th:text="${class.workInfo}"></td>
+  </tr>
+</table>
+</body>
+</html>

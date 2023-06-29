@@ -108,16 +108,6 @@ public class InputUtil {
         return str;
     }
     public static String getStringInput(Scanner scanner) {
-        String str;
-        while (true) {
-            System.out.println("请输入一个字符串：");
-            if (scanner.hasNextLine()) {
-                str=scanner.nextLine();
-                break;
-            }else {
-                System.out.println("重新输入！");
-            }
-        }
-        return str;
+        return scanner.next();
     }
 }

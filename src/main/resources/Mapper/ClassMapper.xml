@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http//mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.swpu.lihongye.dao.mapper.ClassMapper">
+    <resultMap id="ClassResultMap" type="com.swpu.lihongye.pojo.Class">
+        <id     column="class_info"     property="classInfo"/>
+        <result column="class_name"     property="className"/>
+        <result column="work_info"      property="workInfo"/>
+        <result column="class_teacher"  property="classTeacher"/>
+    </resultMap>
+
+    <!--     查询班级 -->
+    <select id="classSearch" resultMap="ClassResultMap">
+        select * from class_message
+        <where>
+            <if test="classInfo != null">
+                AND class_info=#{classInfo}
+            </if>
+        </where>
+    </select>
+
+    <!--    新增班级 -->
+    <insert id="classInsert">
+        INSERT INTO class_message (class_info, work_info, class_name, class_teacher)
+        VALUES (#{classInfo}, #{workInfo}, #{className}, #{classTeacher})
+    </insert>
+
+    <!--    更新信息-->
+    <update id="updateClass">
+        update class_message
+        <set>
+            <if test="classPojo.className != null and classPojo.className != ''">
+                class_name=#{classPojo.className},
+            </if>
+            <if test="classPojo.classTeacher != null and classPojo.classTeacher != ''">
+                class_teacher=#{classPojo.classTeacher},
+            </if>
+            <if test="classPojo.workInfo != null != null">
+                work_info=#{classPojo.workInfo},
+            </if>
+        </set>
+        where class_info=#{classInfo}
+    </update>
+
+    <delete id="deleteClass">
+        delete from class_message where class_info=#{classInfo}
+    </delete>
+</mapper>

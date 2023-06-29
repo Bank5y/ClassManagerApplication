@@ -1,0 +1,26 @@
+<!-- success.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success Page</title>
+</head>
+<body>
+<h1>Success Page</h1>
+<form action="/selected" method="post">
+    <table>
+        <tr>
+            <th>Select</th>
+            <th>Student ID</th>
+            <th>Name</th>
+        </tr>
+        <tr th:each="student : ${students}">
+            <td><input th:type="checkbox"  th:name="selectedStudents" th:value="${student.studentId}" /></td>
+            <td th:text="${student.studentId}"></td>
+            <td th:text="${student.studentName}"></td>
+        </tr>
+    </table>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

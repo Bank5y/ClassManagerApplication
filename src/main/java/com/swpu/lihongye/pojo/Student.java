@@ -2,21 +2,25 @@ package com.swpu.lihongye.pojo;
 
 public class Student{
 private String studentName;
-private String studentId;
+private Long studentId;
 private int age;
-private long phone;
+private Long phone;
 private String address;
+
 
     public Student() {
     }
 
-    public Student(String studentName, String studentId, int age, long phone, String address) {
+    public Student(String studentName, Long studentId, Integer age, Long phone, String address) {
         this.studentName = studentName;
         this.studentId = studentId;
         this.age = age;
         this.phone = phone;
         this.address = address;
     }
+
+    //setter&getter
+
 
     public String getStudentName() {
         return studentName;
@@ -26,11 +30,11 @@ private String address;
         this.studentName = studentName;
     }
 
-    public String getStudentId() {
+    public long getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(String studentId) {
+    public void setStudentId(long studentId) {
         this.studentId = studentId;
     }
 
@@ -60,6 +64,7 @@ private String address;
 
     @Override
     public String toString() {
-        return "姓名："+studentName+"，学号："+studentId+"，年龄："+age+",电话"+phone+"，学校："+ address;
+        return "姓名："+studentName+"，学号："+studentId+
+                "，年龄："+age+",电话"+phone+"，学校："+ address;
     }
 }
